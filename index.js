@@ -190,9 +190,9 @@ function moveDodgerRight() {
        DODGER.style.right = positionToInteger(DODGER.style.right);
 
      }
-     
+
    })
-   
+
 }
 
 /**
