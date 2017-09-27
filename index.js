@@ -181,13 +181,18 @@ function moveDodgerRight() {
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
 
-   const right = positionToInteger(DODGER.style.right);
+   window.requestAnimationFrame(function() {
 
-   if (right > 0) {
+     const right = positionToInteger(DODGER.style.right);
 
-     DODGER.style.right = positionToInteger(DODGER.style.right);
+     if (right > 0) {
+
+       DODGER.style.right = positionToInteger(DODGER.style.right);
+
+     }
      
-   }
+   })
+   
 }
 
 /**
